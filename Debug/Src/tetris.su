@@ -1,0 +1,14 @@
+tetris.c:153:6:playTetris	16	static
+tetris.c:195:6:displayBoard	16	static
+tetris.c:210:6:newBlock	24	static
+tetris.c:222:5:getBottom	16	static
+tetris.c:233:5:getLeft	16	static
+tetris.c:244:5:getRight	16	static
+tetris.c:255:5:fallBlock	40	static
+tetris.c:283:5:leftBlock	48	static
+tetris.c:311:5:rightBlock	48	static
+tetris.c:340:6:fixedBlock	16	static
+tetris.c:352:6:turnBlock	72	static
+tetris.c:432:5:checkBlock	40	static
+tetris.c:450:5:deleteLine	56	static
+tetris.c:495:5:gameOver	16	static
