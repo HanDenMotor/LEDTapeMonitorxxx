@@ -24,21 +24,21 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-LEDMonitor.elf \
+LEDTapeMonitor-github.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-LEDMonitor.list \
+LEDTapeMonitor-github.list \
 
 
 # All Target
-all: LEDMonitor.elf secondary-outputs
+all: LEDTapeMonitor-github.elf secondary-outputs
 
 # Tool invocations
-LEDMonitor.elf: $(OBJS) $(USER_OBJS) C:\Users\okanao\OneDrive\maker\Tetris\LEDMonitor\STM32F446RETX_FLASH.ld
-	arm-none-eabi-gcc -o "LEDMonitor.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\okanao\OneDrive\maker\Tetris\LEDMonitor\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LEDMonitor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+LEDTapeMonitor-github.elf: $(OBJS) $(USER_OBJS) C:\Users\naoki\OneDrive\maker\Tetris\LEDTapeMonitor-github\STM32F446RETX_FLASH.ld
+	arm-none-eabi-gcc -o "LEDTapeMonitor-github.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\naoki\OneDrive\maker\Tetris\LEDTapeMonitor-github\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LEDTapeMonitor-github.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -47,8 +47,8 @@ default.size.stdout: $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-LEDMonitor.list: $(EXECUTABLES)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "LEDMonitor.list"
+LEDTapeMonitor-github.list: $(EXECUTABLES)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "LEDTapeMonitor-github.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 

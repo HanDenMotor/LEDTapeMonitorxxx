@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/okanao/OneDrive/maker/Tetris/LEDMonitor/Inc
+HeaderPath=C:/Users/naoki/OneDrive/maker/Tetris/LEDTapeMonitor-github/Inc
 HeaderFiles=stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;
-SourcePath=C:/Users/okanao/OneDrive/maker/Tetris/LEDMonitor/Src
+SourcePath=C:/Users/naoki/OneDrive/maker/Tetris/LEDTapeMonitor-github/Src
 SourceFiles=stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
